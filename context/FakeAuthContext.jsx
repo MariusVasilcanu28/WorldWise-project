@@ -31,10 +31,10 @@ function reducer(state, action) {
 }
 
 const FAKE_USER = {
-  name: process.env.REACT_APP_FAKE_USERNAME,
-  email: process.env.REACT_APP_FAKE_EMAIL,
-  password: process.env.REACT_APP_FAKE_PASSWORD,
-  avatar: process.env.REACT_APP_FAKE_AVATAR,
+  name: process.env.VITE_FAKE_USERNAME,
+  email: process.env.VITE_FAKE_EMAIL,
+  password: process.env.VITE_FAKE_PASSWORD,
+  avatar: process.env.VITE_FAKE_AVATAR,
 };
 
 function AuthProvider({ children }) {
