@@ -1,0 +1,44 @@
+.product {
+  /* margin: 2.5rem; */
+  padding: 2.5rem 5rem;
+  background-color: var(--color-dark--1);
+  min-height: 100vh;
+}
+
+.product section {
+  width: clamp(5rem, 100%, 90rem);
+  margin: 6rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7rem;
+  align-items: center;
+}
+
+@media (max-width: 575px) {
+  .product section {
+    margin: 3rem auto;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+.product section img {
+  /* width: 100%; */
+  max-width: 100%;
+  height: auto;
+}
+
+.product h2 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+}
+
+.product p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.product section a {
+  margin-top: 2rem;
+}

@@ -1,0 +1,13 @@
+.app {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* full viewport height */
+  overflow: hidden;
+}
+
+@media (max-width: 575px) {
+  .app {
+    flex-direction: column;
+    height: 100dvh;
+  }
+}
