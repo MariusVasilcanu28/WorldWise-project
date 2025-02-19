@@ -68,7 +68,7 @@ function CitiesProvider({ children }) {
       dispatch({ type: "loading" });
 
       try {
-        const res = await fetch(`${process.env.VITE_WORLDWISE_API}/cities`);
+        const res = await fetch(`${import.meta.env.VITE_WORLDWISE_API}/cities`);
 
         if (!res.ok) throw new Error("Failed to fetch cities");
 
@@ -92,7 +92,9 @@ function CitiesProvider({ children }) {
     dispatch({ type: "loading" });
 
     try {
-      const res = await fetch(`${process.env.VITE_WORLDWISE_API}/cities/${id}`);
+      const res = await fetch(
+        `${import.meta.env.VITE_WORLDWISE_API}/cities/${id}`
+      );
       if (!res.ok) {
         throw new Error("Failed to fetch cities");
       }
@@ -110,7 +112,7 @@ function CitiesProvider({ children }) {
     dispatch({ type: "loading" });
 
     try {
-      const res = await fetch(`${process.env.VITE_WORLDWISE_API}/cities`, {
+      const res = await fetch(`${import.meta.env.VITE_WORLDWISE_API}/cities`, {
         method: "POST",
         body: JSON.stringify(newCity),
         headers: {
@@ -134,7 +136,7 @@ function CitiesProvider({ children }) {
     dispatch({ type: "loading" });
 
     try {
-      await fetch(`${process.env.VITE_WORLDWISE_API}/cities/${id}`, {
+      await fetch(`${import.meta.env.VITE_WORLDWISE_API}/cities/${id}`, {
         method: "DELETE",
       });
 
