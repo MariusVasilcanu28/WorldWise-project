@@ -13,7 +13,7 @@ import Form from "./components/Form";
 import SpinnerFullPage from "./components/SpinnerFullPage";
 
 const Product = lazy(() => import("./pages/Product"));
-const HomePage = lazy(() => import("./pages/HomePage"));
+const HomePage = lazy(() => import("./pages/Homepage"));
 const Pricing = lazy(() => import("./pages/Pricing"));
 const Login = lazy(() => import("./pages/Login"));
 const AppLayout = lazy(() => import("./pages/AppLayout"));
